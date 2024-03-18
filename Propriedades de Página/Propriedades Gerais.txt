@@ -1,0 +1,28 @@
+(As propriedades aqui se aplicam tanto para documentos HTML, URLs e MD's)
+
+Exemplificando com o corpo da requisição enviada para gerar o 
+documento Tailwind.pdf:
+
+KEY                                                                                                                     DEFAULT VALUE
+
+singlePage		Define whether to print the entire content in one single page.					false
+paperWidth		Paper width, in inches.										8.5
+paperHeight		Paper height, in inches.									1
+marginTop		Top margin, in inches.										0.39
+marginBottom		Bottom margin, in inches.									0.39
+marginLeft		Left margin, in inches.										0.39
+marginRight		Right margin, in inches.									0.39
+preferCssPageSize	Define whether to prefer page size as defined by CSS.						true
+printBackground		Print the background graphics.									true
+omitBackground		Hide the default white background and allow generating PDFs with transparency.			false
+landscape		Set the paper orientation to landscape.								false
+scale			The scale of the page rendering.								1.0
+nativePageRanges	Page ranges to print, e.g., '1-5, 8, 11-13' - empty means all pages.				1-2
+
+
+
+Considerações:
+
+-By default, a orientação "landscape" de uma página setada para true gera um documento
+que carrega os conteúdos presentes no display horizontal de 1024px.
+

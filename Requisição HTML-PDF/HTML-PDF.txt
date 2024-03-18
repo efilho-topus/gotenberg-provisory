@@ -1,0 +1,18 @@
+Conforme explicitado na documentação, todos os arquivos
+referenciados no documento.html precisam estar na pasta 
+raiz para que sejam renderizados no pdf.
+
+Na requisição, para cada arquivo presente no documento é necessário
+uma chave:
+
+curl \
+--request POST http://localhost:3000/forms/chromium/convert/html \
+--form files=@/path/to/index.html \
+-o my.pdf
+
+No arquivo exemplo.pdf, carreguei apenas um documento .svg 
+para exemplificar a conversão de um doc HTML.
+Como no corpo da requisição eu passei apenas o .svg como chave,
+embora as outras imagens estejam no mesmo nível do HTML, apenas
+o svg foi renderizado no PDF devolvido pelo Gotenberg
+(ver Demonstração.pdf)

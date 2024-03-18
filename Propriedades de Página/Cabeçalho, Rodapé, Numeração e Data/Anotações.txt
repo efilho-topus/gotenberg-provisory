@@ -1,0 +1,43 @@
+
+Carregar arquivos nas chaves <footer.html> e <header.html>, conforme exemplificado
+no arquivo requisição.png. cada campo precisa ter um documento .html COMPLETO,
+senão a requisição não será aceita:
+
+<html>
+<head>
+    <style>
+    body {
+        font-size: 12px;
+        margin: auto 20px;
+    }
+    </style>
+</head>
+<body>
+<p><span class="pageNumber"></span> of <span class="totalPages"></span></p>
+</body>
+</html>
+
+
+Para a numeração da página, utilizar a propriedade <pageNumber> e <totalPages>
+nas tags, da forma descrita acima. Lista completa de propriedades:
+
+    date - formatted print date.
+    title - document title.
+    url - document location.
+    pageNumber - current page number.
+    totalPages - total pages in the document.
+
+
+ESTILIZAÇÃO: Por algum motivo, as propriedades de display não surtem absolutamente
+nenhum efeito no header e no footer. colocar duas divs para se aproveitar do display:
+block e posicionar um elemento abaixo do outro não funciona. Alterar a propriedade
+do display para flex ou grid também não funciona, quer numa tag especial (<pageNumber>)
+ou numa classe criada pelo usuário para estilização.
+
+Aparentemente, todo o código do <header> e <footer> estão presos em display: inline.
+Uma possível alternativa para espaçar, por exemplo, a data do horário da emissão do documento
+no rodapé de forma equidistante, seria inserir blankspaces no HTML.
+
+-->
+O arquivo exemplo.pdf foi gerado com data, hora e cabeçalho feito a partir dos arquivos header.html
+e footer.html, conforme demonstrado no arquivo Requisição.png
